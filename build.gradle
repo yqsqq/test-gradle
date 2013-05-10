@@ -11,7 +11,7 @@ buildscript {
 apply plugin: 'android'
 
 android {
-  compileSdkVersion 17
+  compileSdkVersion 16
   
   sourceSets {
     main {
