@@ -15,6 +15,13 @@ before_install:
   - tar xzf android-sdk_r21.1-linux.tgz
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+  
+  # Gradle
+  - wget http://services.gradle.org/distributions/gradle-1.4-bin.zip
+  - unzip gradle-1.4-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-1.4
+  - export PATH=$PATH:GRADLE_HOME/bin
+  - gradle -v
 
   # Install required components.
   # For a full list, run `android list sdk -a --extended`
@@ -30,4 +37,4 @@ before_install:
 before_script:
   - ./wait_for_emulator
 
-script: mvn install -Pintegration-tests -Dandroid.device=test
+#script: mvn install -Pintegration-tests -Dandroid.device=test
