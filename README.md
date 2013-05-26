@@ -1,7 +1,7 @@
 test-gradle
 ===========
 
-[![Build Status](https://travis-ci.org/pestrada/test-gradle.png)](https://travis-ci.org/pestrada/test-gradle)
+[![Build Status](https://travis-ci.org/pestrada/test-gradle.png?branch=master)](https://travis-ci.org/pestrada/test-gradle)
 
 Sample project for automating Android application builds with Gradle.
 
